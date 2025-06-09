@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t dougschuindt/jelly-app:$(date +%s)
+          docker build -t dougschuindt/jelly-app:$(date +%s) .
 
       - name: Push Docker image
         run: |
